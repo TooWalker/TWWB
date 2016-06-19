@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TWLoadMoreFooter"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Kqn-Nw-dkJ">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在加载更多..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jD-ZF-wZ2">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="44f-kN-DHW">
+                    <rect key="frame" x="239" y="8" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2jD-ZF-wZ2" secondAttribute="trailing" id="5t1-61-cI5"/>
+                <constraint firstItem="2jD-ZF-wZ2" firstAttribute="leading" secondItem="Kqn-Nw-dkJ" secondAttribute="leading" id="7p4-LS-8Kn"/>
+                <constraint firstItem="2jD-ZF-wZ2" firstAttribute="top" secondItem="Kqn-Nw-dkJ" secondAttribute="top" id="aO1-jT-NkW"/>
+                <constraint firstAttribute="bottom" secondItem="2jD-ZF-wZ2" secondAttribute="bottom" id="dZU-oi-Mc3"/>
+                <constraint firstItem="2jD-ZF-wZ2" firstAttribute="leading" secondItem="Kqn-Nw-dkJ" secondAttribute="leading" constant="117" id="khL-8r-RDo"/>
+                <constraint firstAttribute="bottom" secondItem="2jD-ZF-wZ2" secondAttribute="bottom" id="lKX-79-Zy5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="khL-8r-RDo"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="449" y="411"/>
+        </view>
+    </objects>
+</document>
